@@ -1,16 +1,17 @@
 import React from "react";
 import Cards from "../Cards/Cards";
-import "./MainDash.css";
+import "./Maindash.css";
 import Table from "../Table/Table";
 
-const MainDash = () => {
+const Maindash = () => {
   return (
     <div className="MainDash">
-      <h1>Dashboard</h1>
-      <Cards />
-      <Table />
-    </div>
-  );
-};
+    <h1>Dashboard</h1>
+    <Cards />
+    <Table />
+  </div>
+  )
+}
 
-export default MainDash;
+export default Maindash
+
