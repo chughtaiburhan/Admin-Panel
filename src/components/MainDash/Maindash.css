@@ -1,0 +1,28 @@
+/* Main Dashboard Styles */
+.MainDash {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    min-height: calc(100vh - 2rem);
+    overflow: hidden;
+    background-color: #000; /* Jet black background for dashboard */
+    color: var(--text-color); /* Light text for dashboard */
+}
+
+@media screen and (max-width: 1200px) {
+    .MainDash {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MainDash {
+        align-items: center;
+    }
+}

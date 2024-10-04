@@ -1,0 +1,49 @@
+/* Table Styles */
+.Table {
+  width: 100%; /* Full width for the table */
+  margin-top: 2rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.MuiTableRow-root > * {
+  padding: 10px;
+  color: #e0e0e0; /* Light text for table */
+}
+
+.MuiTableRow-root.MuiTableRow-head > * {
+  font-weight: bold !important;
+  color: #e0e0e0; /* Light color for table header */
+}
+
+.Table td,
+th {
+  border: none !important;
+}
+
+.Table:first-child {
+  border-radius: 0.7rem !important;
+}
+
+.status {
+  padding: 8px;
+  border-radius: 9px;
+  color: #333; /* Text color */
+}
+
+.Details {
+  color: #59bfff !important; /* Highlight color for details */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .Table {
+    display: block; /* Change to block for easier scrolling */
+    overflow-x: auto; /* Allow horizontal scroll on smaller screens */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  /* Adjust padding for smaller screens */
+  .MuiTableRow-root > * {
+    padding: 8px;
+  }
+}

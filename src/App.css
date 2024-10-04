@@ -1,0 +1,24 @@
+/* App Styles */
+.App {
+    background: #121212; /* Solid black background */
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    overflow: hidden; /* Prevent overflow from occurring */
+}
+
+.AppGlass {
+    display: grid;
+    height: 97%;
+    width: 97%;
+    border-radius: 2rem;
+    border: 1px solid black;
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    overflow: hidden;
+    grid-template-columns: 11rem auto 20rem;
+    padding: 1rem; /* Add some padding around the grid */
+}

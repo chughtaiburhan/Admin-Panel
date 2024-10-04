@@ -1,0 +1,15 @@
+/* Resetting Margins and Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  --background-color: #121212; /* Dark background */
+  --card-background: #1e1e1e; /* Slightly lighter dark for cards */
+  --text-color: #e0e0e0; /* Light text for contrast */
+  --highlight-color: #00b5ff; /* Bright highlight color */
+  --shadow: rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}

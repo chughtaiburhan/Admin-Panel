@@ -1,0 +1,43 @@
+
+/* RightSide Styles */
+.RightSide {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: flex-start; /* Start from the top */
+    margin: 0 auto;
+    flex-grow: 1;
+    background-color: #000; /* Black background for the entire right side */
+    border-radius: 0.7rem; /* Rounded corners for the whole section */
+    padding: 1.5rem; /* Padding around the content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Softer shadow for elevation */
+}
+
+.RightSide > div {
+    border-radius: 0.5rem; /* Slightly more rounded corners for sections */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+    padding: 1.5rem; /* Padding for content spacing */
+    margin-bottom: 1.5rem; /* Space between sections */
+}
+
+h3 {
+    colsor: var(--highlight-color); /* Aqua color for headings */
+    margin-bottom: 1rem; /* Space below heading */
+    font-size: 1.5rem; /* Increase font size for better visibility */
+    font-weight: 600; /* Make headings slightly bolder */
+}
+
+/* Additional media queries and styles if necessary */
+@media screen and (max-width: 1200px) {
+    .RightSide {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .RightSide {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 0;
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+}

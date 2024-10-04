@@ -1,0 +1,40 @@
+
+/* Cards container */
+.Cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center; /* Center cards within the parent */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  padding: 1rem; /* Add some padding for better spacing */
+  background-color: #1e1e1e; /* Dark background for the card container */
+  border-radius: 0.7rem; /* Rounded corners for the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Softer shadow for elevation */
+}
+
+.parentContainer {
+  width: auto; /* Use auto width to fit content without restriction */
+  padding: 1rem; /* Add padding for better spacing */
+  background-color: #000; /* Jet black background for the parent container */
+  border-radius: 0.7rem; /* Rounded corners for the parent */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1200px) {
+  .CompactCard {
+      flex: 1 1 150px; /* Allow cards to be smaller */
+      height: auto; /* Allow height to adjust */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Cards {
+      justify-content: center; /* Center cards on small screens */
+  }
+
+  .CompactCard {
+      flex: 1 1 100%; /* Full width for cards on small screens */
+      margin-bottom: 1rem; /* Space between rows */
+  }
+}

@@ -1,0 +1,129 @@
+/* CompactCard styles */
+.CompactCard {
+  display: flex;
+  flex: 0 0 200px; /* Set a fixed width for the cards */
+  height: 7rem !important;
+  border-radius: 0.7rem;
+  color: #ecf0f1; /* Light text color for readability */
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  gap: 10px; /* Add gap between elements inside the card */
+  background-color: #2c3e50; /* Darker background for the card */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+}
+
+.CompactCard:hover {
+  background-color: #34495e; /* Lighter background on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important; /* Add shadow on hover */
+}
+
+/* Radial Bar styles */
+.radialBar {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem; /* Space between elements inside radialBar */
+}
+
+.CircularProgressbar {
+  width: 4rem !important;
+  overflow: visible;
+}
+
+.CircularProgressbar-path {
+  stroke: #1abc9c !important; /* Color for the progress bar path */
+  stroke-width: 12px !important;
+  filter: drop-shadow(2px 4px 6px white);
+}
+
+.CircularProgressbar-trail {
+  display: none; /* No trail */
+}
+
+.CircularProgressbar-text {
+  fill: white !important; /* Text color for progress bar */
+}
+
+.radialBar > span {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ecf0f1; /* Light color for text */
+}
+
+/* Side Detail */
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 5px; /* Space between the price and other elements */
+}
+
+.detail > span:nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e74c3c; /* Color for the price */
+}
+
+.detail > span:nth-child(3) {
+  font-size: 12px;
+  color: #bdc3c7; /* Gray color for the label */
+}
+
+/* Expanded Card styles */
+.ExpandedCard {
+  position: absolute;
+  width: 60%;
+  height: 70vh;
+  z-index: 9;
+  left: 13rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #000000; /* Background for expanded card */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.ExpandedCard > span:nth-of-type(1) {
+  /* color: #ecf0f1; Light title color for readability */
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px rgb(46, 1, 1); /* Text shadow for effect */
+}
+
+.ExpandedCard > span:nth-of-type(2) {
+  color: rgb(236, 236, 236); /* Light gray color for secondary text */
+  font-size: 15px;
+}
+
+.chartContainer {
+  width: 70%;
+  margin: 20px 0; /* Space above and below the chart */
+  padding: 10px;
+  background: rgba(14, 0, 0, 0.1); /* Slightly transparent white background for contrast */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .ExpandedCard {
+      top: 2rem;
+      height: 45vh;
+      left: 6rem; /* Adjusted positioning */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ExpandedCard {
+      top: 8rem;
+      height: 50%;
+      left: 25px;
+      width: 80%; /* Responsive width */
+  }
+}
